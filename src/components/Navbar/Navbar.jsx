@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../assets/sLogo.png';
-// import Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom';
-// import { CgGitFork } from "react-icons/cg";
 import {
 	AiOutlineContacts,
-	// AiFillStar,
 	AiOutlineHome,
 } from 'react-icons/ai';
 import { CgFileDocument } from 'react-icons/cg';
@@ -36,15 +32,6 @@ function NavBar() {
 			expand='md'
 			className={navColour ? 'sticky' : 'navbar'}>
 			<Container>
-				{/* <Navbar.Brand
-					href='/'
-					className='d-flex'>
-					<img
-						src={logo}
-						className='img-fluid logo'
-						alt='brand'
-					/>
-				</Navbar.Brand> */}
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'
 					onClick={() => {
@@ -88,19 +75,6 @@ function NavBar() {
 								<FaBlog style={{ marginBottom: '2px' }} /> Blogs
 							</Nav.Link>
 						</Nav.Item>
-
-						{/* <Nav.Item>
-							<Nav.Link
-								as={Link}
-								to='/project'
-								onClick={() => updateExpanded(false)}>
-								<AiOutlineFundProjectionScreen
-									style={{ marginBottom: '2px' }}
-								/>{' '}
-								Projects
-							</Nav.Link>
-						</Nav.Item> */}
-
 						<Nav.Item>
 							<Nav.Link
 								as={Link}
